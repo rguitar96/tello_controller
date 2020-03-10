@@ -1,0 +1,21 @@
+<launch>
+	<arg name="drone_namespace"     default="drone0" />
+
+	<group ns="$(arg drone_namespace)">
+
+		<node name="tello_command_interface" pkg="tello_controller" type="tello_command_interface"  output="screen">
+			<param name="tello_drone_id" value="$(arg tello_drone_id)" type="int"/>
+			<param name="tello_drone_model" value="$(arg tello_drone_model)" type="string"/>
+		</node>
+
+		<node name="tello_state_interface" pkg="tello_controller" type="tello_state_interface" output="screen">
+			<param name="tello_drone_id" value="$(arg tello_drone_id)" type="int"/>
+			<param name="tello_drone_model" value="$(arg tello_drone_model)" type="string"/>
+		</node>
+
+		<node name="tello_camera_interface" pkg="tello_controller" type="tello_camera_interface" output="screen">
+			<param name="tello_drone_id" value="$(arg tello_drone_id)" type="int"/>
+			<param name="tello_drone_model" value="$(arg tello_drone_model)" type="string"/>
+		</node>
+	</group>
+</launch>

@@ -1,0 +1,40 @@
+<package>
+	<name>tello_controller</name>
+	<version>1.1.0</version>
+	<description>
+    		This package is tello_controler.
+	</description>
+	<author email="johndoe@gmail.com"> John Doe </author>
+	<maintainer email="johndoe@gmail.com"> John Doe </maintainer>
+  <license>BSD-3</license>
+	
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  	<build_depend>roscpp</build_depend>
+	<build_depend>std_msgs</build_depend>
+	<build_depend>geometry_msgs</build_depend>
+	<build_depend>gazebo_msgs</build_depend>
+	<build_depend>sensor_msgs</build_depend>
+  	<build_depend>mavros</build_depend> 
+	<build_depend>droneModuleROS</build_depend>
+	<build_depend>droneMsgsROS</build_depend>
+	<build_depend>lib_cvgutils</build_depend>
+    <build_depend>tf_conversions</build_depend>
+	<build_depend>message_generation</build_depend>
+
+	<run_depend>message_runtime</run_depend>
+	<run_depend>roscpp</run_depend>
+	<run_depend>std_msgs</run_depend>
+	<run_depend>geometry_msgs</run_depend>
+	<run_depend>gazebo_msgs</run_depend>
+	<run_depend>sensor_msgs</run_depend>
+  	<run_depend>mavros</run_depend> 
+	<run_depend>droneModuleROS</run_depend>
+	<run_depend>droneMsgsROS</run_depend>
+	<run_depend>lib_cvgutils</run_depend>
+    <run_depend>tf_conversions</run_depend>
+
+</package>
+
+
