@@ -1,5 +1,7 @@
 <launch>
 	<arg name="drone_namespace"     default="drone0" />
+	<arg name="tello_drone_id"     default="0" />
+	<arg name="tello_drone_model"     default="0" />
 
 	<group ns="$(arg drone_namespace)">
 
