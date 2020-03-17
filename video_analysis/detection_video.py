@@ -15,8 +15,8 @@ import numpy as np
 IMG_WIDTH = 2592
 IMG_HEIGHT = 1936
 
-net = cv2.dnn.readNetFromCaffe("/home/rodrigo/catkin_ws/src/tello_controller/video_analysis/deploy.prototxt.txt", 
-        "/home/rodrigo/catkin_ws/src/tello_controller/video_analysis/res10_300x300_ssd_iter_140000.caffemodel")
+net = cv2.dnn.readNetFromCaffe("/home/rodrigo/catkin_ws/src/tello_controller/video_analysis/detection_deploy.prototxt.txt", 
+        "/home/rodrigo/catkin_ws/src/tello_controller/video_analysis/detection_res10_300x300_ssd_iter_140000.caffemodel")
 
 class Node(object):
     def __init__(self):
